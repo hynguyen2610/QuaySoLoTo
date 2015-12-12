@@ -1,0 +1,9 @@
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\bin\Debug\QuaySoLoto.exe.config
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\bin\Debug\QuaySoLoto.exe
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\bin\Debug\QuaySoLoto.pdb
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.csprojResolveAssemblyReference.cache
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.Form1.resources
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.Properties.Resources.resources
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.csproj.GenerateResource.Cache
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.exe
+E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.pdb
