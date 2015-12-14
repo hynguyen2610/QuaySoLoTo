@@ -66,6 +66,7 @@ namespace QuaySoLoto
                 {
                     timer1.Stop();
                     addKQ();
+                    QuaySo.updateFile(li);
                     resetClock();
                 }
             }

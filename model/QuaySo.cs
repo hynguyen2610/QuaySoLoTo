@@ -10,6 +10,8 @@ namespace QuaySoLoto.model
 {
     class QuaySo
     {
+        static String fileName = "data.xml";
+
         public static string Quay()
         {
             int soMax = int.Parse(ConfigurationManager.AppSettings["SoMax"]);
@@ -35,11 +37,11 @@ namespace QuaySoLoto.model
         public static List<KetQua> ReadFile()
         {
             List<KetQua> li = new List<KetQua>();
-            String fileName = "data.xml";
+            
             XmlDocument doc = new XmlDocument();
             try
             {
-                File.OpenRead(fileName);
+                
                 doc.Load(fileName);
                 XmlNode all = doc.ChildNodes[1];
                 var tatCaKetQua = all.ChildNodes;
@@ -59,17 +61,30 @@ namespace QuaySoLoto.model
             }
             catch (Exception ex)
             {
-                //File.Create(fileName);
-                doc.CreateXmlDeclaration("1.0", "utf-8", "yes");
-                //XmlElement root = doc.CreateElement("allKQ");
-                //XmlNode node =  doc.CreateNode(XmlNodeType.Document, "root", "www");
-                //doc.AppendChild(root);
-                //doc.AppendChild(node);
-                //doc.Save(fileName);
+                
             }
+            
             return li;
         }
 
-        public static void updateFile() { }
+        public static void updateFile(List<KetQua> li) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(fileName);
+            var root = doc.ChildNodes[1];
+            root.RemoveAll();
+            foreach(var kq in li)
+            {
+                XmlElement e = doc.CreateElement("KetQua");
+                var nSo = doc.CreateElement("So");
+                nSo.InnerText = kq.So;
+                var nThoiGian = doc.CreateElement("ThoiGian");
+                nThoiGian.InnerText = kq.ThoiGian.ToShortTimeString();
+
+                e.AppendChild(nSo);
+                e.AppendChild(nThoiGian);
+                root.AppendChild(e);
+            }
+            doc.Save(fileName);
+        }
     }
 }
