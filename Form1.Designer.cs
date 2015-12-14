@@ -1,4 +1,6 @@
-﻿namespace QuaySoLoto
+﻿using CEMS.Controls.Commons;
+
+namespace QuaySoLoto
 {
     partial class Form1
     {
@@ -32,12 +34,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgrSo = new System.Windows.Forms.DataGridView();
+            this.dgrSo = new CEMS.Controls.Commons.DataGridViewEx();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnQuay = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgrSo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -55,10 +59,10 @@
             // lblSo
             // 
             this.lblSo.AutoSize = true;
-            this.lblSo.Font = new System.Drawing.Font("Impact", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSo.Location = new System.Drawing.Point(120, 207);
+            this.lblSo.Font = new System.Drawing.Font("Impact", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSo.Location = new System.Drawing.Point(38, 189);
             this.lblSo.Name = "lblSo";
-            this.lblSo.Size = new System.Drawing.Size(382, 117);
+            this.lblSo.Size = new System.Drawing.Size(473, 145);
             this.lblSo.TabIndex = 1;
             this.lblSo.Text = "1234567";
             // 
@@ -83,9 +87,11 @@
             this.dgrSo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgrSo.AutoGenerateColumns = false;
             this.dgrSo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrSo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
+            this.dgrSo.DataSource = this.bindingSource1;
             this.dgrSo.Location = new System.Drawing.Point(562, 231);
             this.dgrSo.Name = "dgrSo";
             this.dgrSo.ReadOnly = true;
@@ -129,6 +135,7 @@
             this.Text = "Quay số";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgrSo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,10 +146,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblSo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgrSo;
+        private CEMS.Controls.Commons.DataGridViewEx dgrSo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Button btnQuay;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 

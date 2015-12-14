@@ -8,6 +8,6 @@ namespace QuaySoLoto.model
     class KetQua
     {
         public DateTime ThoiGian { get; set; }
-        public String So{ get; set; }
-}
+        public String So { get; set; }
+    }
 }
