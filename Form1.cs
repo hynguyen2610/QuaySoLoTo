@@ -25,7 +25,7 @@ namespace QuaySoLoto
         {
             InitializeComponent();
             thoiGianQuay = int.Parse(ConfigurationManager.AppSettings["ThoiGianQuay"]);
-            
+
             initLable();
             loadFile();
         }
@@ -35,7 +35,7 @@ namespace QuaySoLoto
             int soMax = int.Parse(ConfigurationManager.AppSettings["SoMax"]);
             soChuSo = soMax.ToString().Length;
             text = "0";
-            for(int i = 0; i< soChuSo-1; i++)
+            for (int i = 0; i < soChuSo - 1; i++)
             {
                 text += "0";
             }
@@ -86,9 +86,10 @@ namespace QuaySoLoto
             interCount = 0;
         }
 
-        void addKQ() {
+        void addKQ()
+        {
             KetQua kq = new KetQua() { So = text, ThoiGian = DateTime.Now };
-            li.Add(kq);
+            li.Insert(0, kq);
             bindingSource1.DataSource = li;
             dgrSo.DataSource = null;
             dgrSo.DataSource = bindingSource1;
@@ -99,6 +100,11 @@ namespace QuaySoLoto
             String s = QuaySo.Quay();
             lblSo.Text = s;
             return true;
+        }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
