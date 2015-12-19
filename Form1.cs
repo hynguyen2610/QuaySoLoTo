@@ -53,6 +53,7 @@ namespace QuaySoLoto
         {
 
             timer1.Start();
+            lblSo.ForeColor = Color.Black;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace QuaySoLoto
                     addKQ();
                     QuaySo.updateFile(li);
                     resetClock();
+                    lblSo.ForeColor = Color.Red;
                 }
             }
             else

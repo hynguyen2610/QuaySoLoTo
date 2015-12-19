@@ -7,3 +7,14 @@ E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.Properties.Resour
 E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.csproj.GenerateResource.Cache
 E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.exe
 E:\Learning\C#\Code\QuaySoLoto\QuaySoLoto\obj\Debug\QuaySoLoto.pdb
+D:\Projects\XoSo\QuaySoLoTo\bin\Debug\QuaySoLoto.exe.config
+D:\Projects\XoSo\QuaySoLoTo\obj\Debug\QuaySoLoto.csprojResolveAssemblyReference.cache
+D:\Projects\XoSo\QuaySoLoTo\obj\Debug\QuaySoLoto.Form1.resources
+D:\Projects\XoSo\QuaySoLoTo\obj\Debug\QuaySoLoto.Properties.Resources.resources
+D:\Projects\XoSo\QuaySoLoTo\obj\Debug\QuaySoLoto.csproj.GenerateResource.Cache
+D:\Projects\XoSo\QuaySoLoTo\bin\Debug\QuaySoLoto.exe
+D:\Projects\XoSo\QuaySoLoTo\bin\Debug\QuaySoLoto.pdb
+D:\Projects\XoSo\QuaySoLoTo\bin\Debug\CEMS.Controls.dll
+D:\Projects\XoSo\QuaySoLoTo\obj\Debug\QuaySoLoto.exe
+D:\Projects\XoSo\QuaySoLoTo\obj\Debug\QuaySoLoto.pdb
+D:\Projects\XoSo\QuaySoLoTo\bin\Debug\data.xml
